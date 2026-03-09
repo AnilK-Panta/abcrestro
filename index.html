@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar" id="navbar">
+        <div class="navbar_left">
+            <img src="./images/logo.png" alt="">
+            <div class="navbar_center">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Menu</a>
+                <a href="#">Services</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <button class="btn" onclick="change_color()">CONTACT</button>
+    </div>
+    <div class="heroimg">
+      <img src="./images/hero_img.png" alt="">
+    </div>
+    <div class="content_main">
+      <span>
+        The Best Restaurant In Town
+      </span>
+      <h1>Enjoy Your Family Time, Enjoy Your Quality Time</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Faucibus fermentum lectus blandit elementum mattis. Orci pulvinar morbi egestas nec urna leo. Elementum in quam a placerat odio. Aliquam egestas enim ornare libero vestibulum morbi nulla nulla commodo. Nisi erat in nibh congue viverra. Gravida ornare nisi volutpat feugiat vulputate. Scelerisque nisi 
+      </p>
+      <a href="" class="btn">See Menu</a>
+    </div>
+    <div class="about_intro">
+      <img src="./images/about.jpg" alt="">
+      <div class="content">
+        <h2>Enjoy Your Family Time</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Faucibus fermentum lectus blandit elementum mattis. Orci pulvinar morbi egestas nec urna leo. Elementum in quam a placerat odio. Aliquam egestas enim ornare libero vestibulum morbi nulla nulla commodo. Nisi erat in nibh congue viverra. Gravida ornare nisi volutpat feugiat vulputate. Scelerisque nisi </p>
+        <a href="" class="btn">See Menu</a>
+      </div>
+    </div>
+    <div class="services">
+      <h2>Our Services</h2>
+      <div class="wrapper" id="servicesWrap">
+        <div class="card">
+          <img src="images/about.jpg" alt="">
+          <a href="">Open Tarrace</a>
+        </div>
+        <div class="card">
+          <img src="images/about.jpg" alt="">
+          <a href="">Open Tarrace</a>
+        </div>
+        <div class="card">
+          <img src="images/about.jpg" alt="">
+          <a href="">Open Tarrace</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <h2>Our Menu</h2>
+      <div class="tabs">
+        <button class="btn_tab active">All</button>
+        <button class="btn_tab">Veg</button>
+        <button class="btn_tab">Non Veg</button>
+        <button class="btn_tab">Drinks</button>
+      </div>
+      <div class="foods" id="menuWrap">
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+        <div class="food_card">
+          <img src="./images/about.jpg" alt="">
+          <div>
+            <p class="name">Chowmin</p>
+            <p class="price">Starting Price: <span>Nrs. 120</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h2>Contact</h2>
+      <div class="wrap">
+        <form action="" method="get">
+          <input type="text" placeholder="Full Name" name="fname">
+          <input type="email" placeholder="Email" name="email">
+          <input type="number" placeholder="Phone No" name="number">
+          <input type="text" placeholder="Address" name="address">
+          <textarea name="note" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </form>
+        <img src="./images/about.jpg" alt="">
+      </div>
+    </div>
+
+
+    <!-- <script>
+      async function servicesApi(){
+        const x = await fetch("http://localhost:5000/services")
+        const y = await x.json()
+        document.getElementById("servicesWrap").innerHTML = y.map((curElem)=>`<div class="card">
+          <img src=${curElem.img} alt="">
+          <a href="">${curElem.title}</a>
+        </div>`).join('')
+        console.log(y)
+      }
+      servicesApi()
+      async function menuApi(){
+        const x = await fetch("http://localhost:5000/menu")
+        const y = await x.json()
+        document.getElementById("menuWrap").innerHTML = y.map((curElem)=>`<div class="food_card">
+          <img src=${curElem.img} alt="">
+          <div>
+            <p class="name">${curElem.title}</p>
+            <p class="price">Starting Price: <span>Nrs. ${curElem.price}</span></p>
+          </div>
+        </div>`).join('')
+        console.log(y)
+      }
+      menuApi()
+    </script> -->
+  </body>
+</html>
